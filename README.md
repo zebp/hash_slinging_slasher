@@ -12,6 +12,6 @@ import { hash } from "https://deno.land/x/hash_slinging_slasher";
 const file = await Deno.open("random.bin");
 const computed = await hash(file, "hex", "sha1");
 
-// Computes
+// Logs the computed hash in hex
 console.log(computed);
 ```
